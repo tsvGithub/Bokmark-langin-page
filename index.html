@@ -173,6 +173,9 @@ vitae neque eget nisl gravida pellentesque non ut velit.</div>
   <h3>Stay up-to-date with what we’re doing</h3>
 <form class="signUpForm" action="#" method="POST" autocomplete="on">
   <input class="input" type="em" name="email" placeholder="Enter your email address" aria-label="Enter your email address" >
+  <div class="error-msg" role="alert" aria-live="assertive" >Email cannot be empty</div>
+  <div class="error-msg error-email" role="alert" aria-live="assertive">Whoops, make sure it's an email</div>
+
   <button id="contactUs" class="btn-submit" type="submit" aria-label="Button Submit" >Contact Us</button>
 </form>
 </section>
@@ -193,5 +196,6 @@ vitae neque eget nisl gravida pellentesque non ut velit.</div>
 </p>
 </footer>
 </div>
+<script src="main.js"></script>
 </body>
 </html>
