@@ -1,6 +1,6 @@
 //===== EMAIL FORM =====
 var form = document.querySelector(".signUpForm"); //get form from HTML
-var email = document.querySelector('input[type="em"]'); //get only email; [type="em"] not [type="email"] as it uses browser's prompts
+var email = document.querySelector('input[type="em"]'); //get only email; [type="em"] not [type="email"] as it uses browser's prompts (to prevent default behavior)
 var checkEmail = email => {
   //check with RegEx
   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
