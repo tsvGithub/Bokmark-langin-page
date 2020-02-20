@@ -1,201 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Bookmark landing page</title>
-  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">  
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 
-    <!--[if lt IE 9]>
+  <!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 </head>
+
 <body>
   <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-<div class="container" id="scroll-up">
-  <!--Scroll-to-Top-btn-->
-  <a href="#scroll-up" class="scroll-to-top" aria-label="scroll to top button">
+  <div class="container" id="scroll-up">
+    <!--Scroll-to-Top-btn-->
+    <a href="#scroll-up" class="scroll-to-top" aria-label="scroll to top button">
       <i class="fa fa-arrow-up"></i>
-    </a>  
-<header>
-    <ul class="navbar">
-      <li class="logo">
-        <a href="">
-          <img class="logo" src="images/logo-bookmark.svg">
-        </a>
-      </li>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li><a href="#contactUs">Contact</a></li>
-      <li><a href="#">Login</a></li>
-  </ul>
-</header>
-
-<main class="main">
-  <section class="hero">
-    <article class="content">
-      <h1>A Simple Bookmark Manager</h1>
-      <p>A clean and simple interface to organize your favourite websites. Open a new
-        browser tab and see your sites load instantly. Try it for free.</p>
-      <ul>
-        <li>Get it on Chrome</li>
-        <li>Get it on Firefox</li>
+    </a>
+    <header>
+      <ul class="navbar">
+        <li class="logo">
+          <a href="">
+            <img class="logo" src="images/logo-bookmark.svg">
+          </a>
+        </li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#contactUs">Contact</a></li>
+        <li><a href="#">Login</a></li>
       </ul>
-    </article>
-    <article class="img">
-      <img src="images/illustration-hero.svg" alt="">
-    </article>
-  </section>
+    </header>
 
-  <section class="features" id="features">
-    <article class="content">
-      <h3 >Features</h3>
-      <p>Our aim is to make it quick and easy for you to access your favourite websites.
-      Your bookmarks sync between your devices so you can access them on the go.</p>
-    </article>
+    <main class="main">
+      <section class="hero">
+        <article class="content">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>A clean and simple interface to organize your favourite websites. Open a new
+            browser tab and see your sites load instantly. Try it for free.</p>
+          <ul>
+            <li>Get it on Chrome</li>
+            <li>Get it on Firefox</li>
+          </ul>
+        </article>
+        <article class="img">
+          <img src="images/illustration-hero.svg" alt="">
+        </article>
+      </section>
 
-    <ul>
-      <li>Simple Bookmarking</li>
-      <li>Speedy Searching</li>
-      <li>Easy Sharing</li>
-    </ul>
+      <section class="features" id="features">
+        <article class="content">
+          <h3>Features</h3>
+          <p>Our aim is to make it quick and easy for you to access your favourite websites.
+            Your bookmarks sync between your devices so you can access them on the go.</p>
+        </article>
+        <!-- Tab links -->
+        <div class="tab">
+          <button class="tablinks" onclick="openSlide(event, 'Bookmark')"> Simple Bookmarking</button>
+          <button class="tablinks" onclick="openSlide(event, 'Search')"> Speedy Searching</button>
+          <button class="tablinks" onclick="openSlide(event, 'Share')"> Easy Sharing</button>
+        </div>
+        <!-- Tab content-->
+        <section id="Bookmark" class="slide tabcontent active">
+          <article class="img">
+            <img src="images/illustration-features-tab-1.svg" alt="">
+          </article>
+          <article class="content">
+            <h3>Bookmark in one click</h3>
+            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+              gives you complete control over how you manage your favourite sites.</p>
+            <button>More Info</button>
+          </article>
+        </section>
 
-<section class="slide">
-  <article class="img">
-    <img src="images/illustration-features-tab-1.svg" alt="">
-  </article>
-  <article class="content">
-    <h3>Bookmark in one click</h3>
-    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
-    gives you complete control over how you manage your favourite sites.</p>
-    <button>More Info</button>
-  </article>
-</section>
+        <section id="Search" class="slide tabcontent">
+          <article class="img">
+            <img src="images/illustration-features-tab-2.svg" alt="">
+          </article>
+          <article class="content">
+            <h3>Intelligent search</h3>
+            <p>Our powerful search feature will help you find saved sites in no time at all.
+              No need to trawl through all of your bookmarks.</p>
+            <button>More Info</button>
+          </article>
+        </section>
 
-<section class="slide">
-  <article class="img">
-      <img src="images/illustration-features-tab-2.svg" alt="">
-  </article>
-  <article class="content">
-    <h3>Intelligent search</h3>
-    <p>Our powerful search feature will help you find saved sites in no time at all.
-    No need to trawl through all of your bookmarks.</p>
-    <button>More Info</button>
-  </article>
-</section>
+        <section id="Share" class="slide tabcontent">
+          <article class="img">
+            <img src="images/illustration-features-tab-3.svg" alt="">
+          </article>
+          <article class="content">
+            <h3>Share your bookmarks</h3>
+            <p>Easily share your bookmarks and collections with others. Create a shareable
+              link that you can send at the click of a button.</p>
+            <button>More Info</button>
+          </article>
+        </section>
+      </section>
 
-<section class="slide">
-  <article class="img">
-      <img src="images/illustration-features-tab-3.svg" alt="">
-    </article>
-    <article class="content">
-  <h3>Share your bookmarks</h3>
-  <p>Easily share your bookmarks and collections with others. Create a shareable
-  link that you can send at the click of a button.</p>
-  <button>More Info</button>
-  </article>
-</section>
-</section>
+      <section class="download">
+        <h3>Download the extension</h3>
+        <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve
+          got a favourite you’d like us to prioritize.</p>
 
-<section class="download">
-  <h3>Download the extension</h3>
-  <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve
-  got a favourite you’d like us to prioritize.</p>
+        <ul>
+          <li class="card chrome">
+            <img src="images/logo-chrome.svg" alt="">
+            <h5>Add to Chrome</h5>
+            <p>Minimum version 62</p>
+            <button>Add & Install Extension</button>
+          </li>
 
-  <ul>
-  <li class="card chrome">
-    <img src="images/logo-chrome.svg" alt="">
-    <h5>Add to Chrome</h5>
-    <p>Minimum version 62</p>
-    <button>Add & Install Extension</button>
-  </li>
-  
-  <li class="card firefox">
-    <img src="images/logo-firefox.svg" alt="">
-    <h5>Add to Firefox</h5>
-    <p>Minimum version 55</p>
-    <button>Add & Install Extension</button>
-  </li>
-  
-  <li class="card opera">
-    <img src="images/logo-opera.svg" alt=""> 
-    <h5>Add to Opera</h5>
-    <p> Minimum version 46</p>
-    <button>Add & Install Extension</button>
-  </li>
-</ul>
-</section>
+          <li class="card firefox">
+            <img src="images/logo-firefox.svg" alt="">
+            <h5>Add to Firefox</h5>
+            <p>Minimum version 55</p>
+            <button>Add & Install Extension</button>
+          </li>
 
-<section class="faq">
-  <h3>Frequently Asked Questions</h3>
-  <p>Here are some of our FAQs. If you have any other questions you’d like
-  answered please feel free to email us.</p>
+          <li class="card opera">
+            <img src="images/logo-opera.svg" alt="">
+            <h5>Add to Opera</h5>
+            <p> Minimum version 46</p>
+            <button>Add & Install Extension</button>
+          </li>
+        </ul>
+      </section>
 
-<!-- Question 1 -->
-<div class="question">What is Bookmark?</div>
-<!-- Answer 1 -->
-<div class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
-justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</div>
+      <section class="faq">
+        <h3>Frequently Asked Questions</h3>
+        <p>Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.</p>
 
-<!-- Question 2 -->
-<div class="question">How can I request a new browser?</div>
-<!-- Answer 2 -->
-<div class="answer">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
-Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
-Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</div>
+        <!-- Question 1 -->
+        <div class="question">What is Bookmark?</div>
+        <!-- Answer 1 -->
+        <div class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+          justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</div>
 
-<!-- Question 3 -->
-<div class="question">Is there a mobile app?</div>
-<!-- Answer 3 -->
-<div class="answer">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
-urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
-sollicitudin ex et ultricies bibendum.</div>
+        <!-- Question 2 -->
+        <div class="question">How can I request a new browser?</div>
+        <!-- Answer 2 -->
+        <div class="answer">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+          Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+          ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+          Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</div>
 
-<!-- Question 4 -->
-<div class="question">What about other Chromium browsers?</div>
-<!-- Answer 4 -->
-<div class="answer">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
-vitae neque eget nisl gravida pellentesque non ut velit.</div>
+        <!-- Question 3 -->
+        <div class="question">Is there a mobile app?</div>
+        <!-- Answer 3 -->
+        <div class="answer">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut
+          condimentum
+          urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+          sollicitudin ex et ultricies bibendum.</div>
 
-<button>More Info</button>
-</section>
+        <!-- Question 4 -->
+        <div class="question">What about other Chromium browsers?</div>
+        <!-- Answer 4 -->
+        <div class="answer">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui.
+          Aliquam
+          vitae neque eget nisl gravida pellentesque non ut velit.</div>
 
-<section class="sign-up">
-  <p>35,000+ already joined</p>
-  <h3>Stay up-to-date with what we’re doing</h3>
-<form class="signUpForm" action="#" method="POST" autocomplete="on">
-  <input class="input" type="em" name="email" placeholder="Enter your email address" aria-label="Enter your email address" >
-  <div class="error-msg" role="alert" aria-live="assertive" >Email cannot be empty</div>
-  <div class="error-msg error-email" role="alert" aria-live="assertive">Whoops, make sure it's an email</div>
+        <button>More Info</button>
+      </section>
 
-  <button id="contactUs" class="btn-submit" type="submit" aria-label="Button Submit" >Contact Us</button>
-</form>
-</section>
-</main>
+      <section class="sign-up">
+        <p>35,000+ already joined</p>
+        <h3>Stay up-to-date with what we’re doing</h3>
+        <form class="signUpForm" action="#" method="POST" autocomplete="on">
+          <input class="input" type="em" name="email" placeholder="Enter your email address"
+            aria-label="Enter your email address">
+          <div class="error-msg" role="alert" aria-live="assertive">Email cannot be empty</div>
+          <div class="error-msg error-email" role="alert" aria-live="assertive">Whoops, make sure it's an email</div>
 
-<footer>
-  <ul class="navbar">
-    <li class="logo"><a href=""><img class="logo" src="images/logo-bookmark.svg"></a></li>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#">Pricing</a></li>
-    <li><a href="#contactUs">Contact</a></li>
-    <li><a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" alt=""></a></li>
-    <li><a href="https://www.twitter.com" target="_blank"><img src="images/icon-twitter.svg" alt=""></a></li>
-    </ul>
-<p class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a class="tsv" href="https://github.com/tsvGithub" target="_blank" rel="noopener noreferrer">tsvGitHub.</a>
-</p>
-</footer>
-</div>
-<script src="main.js"></script>
+          <button id="contactUs" class="btn-submit" type="submit" aria-label="Button Submit">Contact Us</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <ul class="navbar">
+        <li class="logo"><a href=""><img class="logo" src="images/logo-bookmark.svg"></a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#contactUs">Contact</a></li>
+        <li><a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" alt=""></a></li>
+        <li><a href="https://www.twitter.com" target="_blank"><img src="images/icon-twitter.svg" alt=""></a></li>
+      </ul>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a class="tsv" href="https://github.com/tsvGithub" target="_blank"
+          rel="noopener noreferrer">tsvGitHub.</a>
+      </p>
+    </footer>
+  </div>
+  <script src="main.js"></script>
 </body>
+
 </html>
