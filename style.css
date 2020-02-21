@@ -86,7 +86,7 @@ body {
 
 /*------------------
 ---------HEADER-----*/
-header {
+header.header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
@@ -104,30 +104,32 @@ header {
   max-width: 100vw;
   max-width: 100%;
 }
-header .navbar {
-  padding-left: 0;
+.header .navbar {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 2rem 1rem;
+  padding: 1rem;
   display: flex;
   justify-content: flex-end;
 }
-header .navbar li.logo {
+.header .navbar li.logo {
   flex: 5;
 }
 
-header .navbar li {
+.header .navbar li {
   flex: 1;
+  text-align: center;
 }
 
-img.logo {
+.header img.logo,
+.footer img.logo {
   max-width: 100%;
   /* width: 100%; */
   outline: none; /*IE*/
   border: none; /*IE*/
   overflow: visible;
 }
-img.logo:hover {
+.header img.logo:hover,
+.footer img.logo:hover {
   transform: scale(1.2);
   transition: 2s;
   -webkit-transform: scale(1.2);
@@ -161,6 +163,7 @@ main.main {
 
   display: -ms-grid;
   display: grid;
+
   grid-template-areas:
     "hero"
     "features"
@@ -169,7 +172,7 @@ main.main {
     "sign-up";
 }
 main.main > section {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 
@@ -178,13 +181,15 @@ main.main > section {
   -ms-flex-direction: column;
   flex-direction: column;
 
-  justify-content: center;
+  justify-content: center; */
 }
 section.hero {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: hero;
+  display: flex;
 }
+
 section.features {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -231,14 +236,18 @@ section.features {
   border-right: 1px solid #ccc;
   border-top: none;
 }
-.tabcontent.active {
-  display: block;
+.features .tabcontent.active {
+  /* display: block; */
+  display: flex;
 }
 
 /**************************/
 section.slide {
   /* display: flex; */
 }
+
+
+/************************************
 section.download {
   -ms-grid-row: 3;
   -ms-grid-column: 1;

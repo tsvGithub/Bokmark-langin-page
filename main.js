@@ -43,6 +43,6 @@ function openSlide(evt, slideName) {
     tablinks[i].className = tablinks[i].className.replace("active", "");
   }
   //Show the current tab, and add an 'active' class to the button that opened the tab
-  document.getElementById(slideName).style.display = "block";
+  document.getElementById(slideName).style.display = "flex";
   evt.currentTarget.className += " active";
 }
