@@ -242,12 +242,11 @@ section.features {
 }
 
 /**************************/
-section.slide {
-  /* display: flex; */
-}
+/* section.slide {
+  /* display: flex; 
+} */
 
-
-/************************************
+/************************************/
 section.download {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -260,7 +259,19 @@ section.download ul {
   padding: 0;
   display: flex;
   justify-content: center;
+  height: 300px;
 }
+section.download .chrome {
+  align-self: flex-start;
+}
+section.download .firefox {
+  align-self: center;
+}
+section.download .opera {
+  align-self: flex-end;
+}
+
+/***************************************/
 section.faq {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -269,6 +280,60 @@ section.faq {
   /* justify-content: center;
     flex-direction: column; */
 }
+/******* ACCORDION ****************/
+/* Style the DIVS that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-top: 1px solid gray;
+  outline: none;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.accordion:nth-of-type(7) {
+  border-bottom: 1px solid gray;
+  /* background-color: red; */
+}
+.accordion::after {
+  content: url("images/icon-arrow.svg");
+  float: right;
+  margin-left: 5px;
+}
+/* Add a background color to the div if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+.active::after {
+  content: url("images/icon-arrow-red.svg");
+  transform: rotate(180deg);
+  transition-duration: 1s;
+}
+
+/* Style the accordion panel, hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: #fff;
+  /* display: none; */
+
+  overflow: hidden;
+  /*********** animated  accordion******/
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  -webkit-transition: max-height 0.2s ease-out;
+  -moz-transition: max-height 0.2s ease-out;
+  -ms-transition: max-height 0.2s ease-out;
+  -o-transition: max-height 0.2s ease-out;
+}
+/*****************************************/
 section.sign-up {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
