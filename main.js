@@ -1,3 +1,17 @@
+//=========   NAV - TOGGLE ============
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelectorAll(".nav__link");
+
+navToggle.addEventListener("click", () => {
+  document.body.classList.toggle("nav-open");
+});
+
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    document.body.classList.remove("nav-open");
+  });
+});
+
 //===== EMAIL FORM =====
 var form = document.querySelector(".signUpForm"); //get form from HTML
 var email = document.querySelector('input[type="em"]'); //get only email; [type="em"] not [type="email"] as it uses browser's prompts (to prevent default behavior)

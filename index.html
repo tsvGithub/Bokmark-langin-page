@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" /> -->
 
   <!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -28,18 +30,28 @@
     <a href="#scroll-up" class="scroll-to-top" aria-label="scroll to top button">
       <i class="fa fa-arrow-up"></i>
     </a>
+
     <header class="header">
-      <ul class="navbar">
-        <li class="logo">
-          <a href="">
-            <img class="logo" src="images/logo-bookmark.svg">
-          </a>
-        </li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#contactUs">Contact</a></li>
-        <li><a href="#">Login</a></li>
-      </ul>
+      <div class="logo">
+        <a class="logo" href=""><img class="logo" src="images/logo-bookmark.svg">
+        </a>
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span></button>
+      </div>
+      <nav class="nav">
+        <ul class="navbar">
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#" class="nav-link">Pricing</a></li>
+          <li><a href="#contactUs" class="nav-link">Contact</a></li>
+          <li class="login"><button class="sign-in" class="nav-link">Login</button></li>
+          <li class="socials">
+            <a class="nav-link" href="https://www.facebook.com" target="_blank">
+              <i class="fab fa-facebook"></i></a>
+            <a class="nav-link" href="https://www.twitter.com" target="_blank">
+              <i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="main">
@@ -48,10 +60,8 @@
           <h1>A Simple Bookmark Manager</h1>
           <p>A clean and simple interface to organize your favourite websites. Open a new
             browser tab and see your sites load instantly. Try it for free.</p>
-          <ul>
-            <li>Get it on Chrome</li>
-            <li>Get it on Firefox</li>
-          </ul>
+          <button>Get it on Chrome</button>
+          <button>Get it on Firefox</button>
         </article>
         <article class="img">
           <img src="images/illustration-hero.svg" alt="">
@@ -60,13 +70,13 @@
 
       <section class="features" id="features">
         <article class="content">
-          <h3>Features</h3>
+          <H2>Features</H2>
           <p>Our aim is to make it quick and easy for you to access your favourite websites.
             Your bookmarks sync between your devices so you can access them on the go.</p>
         </article>
         <!-- Tab links -->
         <div class="tab">
-          <button class="tablinks" onclick="openSlide(event, 'Bookmark')"> Simple Bookmarking</button>
+          <button class="tablinks active" onclick="openSlide(event, 'Bookmark')"> Simple Bookmarking</button>
           <button class="tablinks" onclick="openSlide(event, 'Search')"> Speedy Searching</button>
           <button class="tablinks" onclick="openSlide(event, 'Share')"> Easy Sharing</button>
         </div>
@@ -76,7 +86,7 @@
             <img src="images/illustration-features-tab-1.svg" alt="">
           </article>
           <article class="content">
-            <h3>Bookmark in one click</h3>
+            <H2>Bookmark in one click</H2>
             <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
               gives you complete control over how you manage your favourite sites.</p>
             <button>More Info</button>
@@ -88,7 +98,7 @@
             <img src="images/illustration-features-tab-2.svg" alt="">
           </article>
           <article class="content">
-            <h3>Intelligent search</h3>
+            <H2>Intelligent search</H2>
             <p>Our powerful search feature will help you find saved sites in no time at all.
               No need to trawl through all of your bookmarks.</p>
             <button>More Info</button>
@@ -100,7 +110,7 @@
             <img src="images/illustration-features-tab-3.svg" alt="">
           </article>
           <article class="content">
-            <h3>Share your bookmarks</h3>
+            <H2>Share your bookmarks</H2>
             <p>Easily share your bookmarks and collections with others. Create a shareable
               link that you can send at the click of a button.</p>
             <button>More Info</button>
@@ -109,9 +119,11 @@
       </section>
 
       <section class="download">
-        <h3>Download the extension</h3>
-        <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve
-          got a favourite you’d like us to prioritize.</p>
+        <article class="content">
+          <H2>Download the extension</H2>
+          <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve
+            got a favourite you’d like us to prioritize.</p>
+        </article>
 
         <ul>
           <li class="card chrome">
@@ -138,36 +150,38 @@
       </section>
 
       <section class="faq">
-        <h3>Frequently Asked Questions</h3>
+        <h2>Frequently Asked Questions</h2>
         <p>Here are some of our FAQs. If you have any other questions you’d like
           answered please feel free to email us.</p>
 
         <!-- Question 1 -->
-        <div class="question">What is Bookmark?</div>
+        <div class="question accordion">What is Bookmark?</div>
         <!-- Answer 1 -->
-        <div class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+        <div class="answer panel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
           justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</div>
 
         <!-- Question 2 -->
-        <div class="question">How can I request a new browser?</div>
+        <div class="question accordion">How can I request a new browser?</div>
         <!-- Answer 2 -->
-        <div class="answer">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+        <div class="answer panel">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non
+          ligula.
           Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
           ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
           Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</div>
 
         <!-- Question 3 -->
-        <div class="question">Is there a mobile app?</div>
+        <div class="question accordion">Is there a mobile app?</div>
         <!-- Answer 3 -->
-        <div class="answer">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut
+        <div class="answer panel">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut
           condimentum
           urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
           sollicitudin ex et ultricies bibendum.</div>
 
         <!-- Question 4 -->
-        <div class="question">What about other Chromium browsers?</div>
+        <div class="question accordion">What about other Chromium browsers?</div>
         <!-- Answer 4 -->
-        <div class="answer">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui.
+        <div class="answer panel">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod
+          dui.
           Aliquam
           vitae neque eget nisl gravida pellentesque non ut velit.</div>
 
@@ -175,27 +189,39 @@
       </section>
 
       <section class="sign-up">
-        <p>35,000+ already joined</p>
-        <h3>Stay up-to-date with what we’re doing</h3>
+        <h5>35,000+ already joined</h5>
+        <H2>Stay up-to-date with what we’re doing</H2>
         <form class="signUpForm" action="#" method="POST" autocomplete="on">
-          <input class="input" type="em" name="email" placeholder="Enter your email address"
-            aria-label="Enter your email address">
-          <div class="error-msg" role="alert" aria-live="assertive">Email cannot be empty</div>
-          <div class="error-msg error-email" role="alert" aria-live="assertive">Whoops, make sure it's an email</div>
+          <div class="wrapper">
+            <input class="input" type="em" name="email" placeholder="Enter your email address"
+              aria-label="Enter your email address">
+            <div class="error-msg" role="alert" aria-live="assertive">Email cannot be empty</div>
+            <div class="error-msg error-email" role="alert" aria-live="assertive">Whoops, make sure it's an email</div>
+          </div>
 
-          <button id="contactUs" class="btn-submit" type="submit" aria-label="Button Submit">Contact Us</button>
+          <button id="contactUs" class="btn-submit sign-in" type="submit" aria-label="Button Submit">Contact Us</button>
         </form>
       </section>
     </main>
 
     <footer class="footer">
       <ul class="navbar">
-        <li class="logo"><a href=""><img class="logo" src="images/logo-bookmark.svg"></a></li>
+        <li class="logo">
+          <a href="">
+            <img class="logo" src="images/logo-bookmark.svg">
+          </a>
+        </li>
         <li><a href="#features">Features</a></li>
         <li><a href="#">Pricing</a></li>
         <li><a href="#contactUs">Contact</a></li>
-        <li><a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" alt=""></a></li>
-        <li><a href="https://www.twitter.com" target="_blank"><img src="images/icon-twitter.svg" alt=""></a></li>
+        <li class="socials">
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
       </ul>
       <p class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
