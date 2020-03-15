@@ -7,7 +7,7 @@
     ==TABLET STYLES==
     ==MOBILE STYLES==
 */
-
+  /* for check*/
 /* *,
 *::before,
 *:after {
@@ -1142,8 +1142,7 @@ MOBILE STYLES  375PX*/
   main.main .features .tabcontent .img img {
     max-width: 100%;
     margin: 0 auto;
-    /* for check*/
-  }
+    }
 
   main.main .features .tabcontent .img::before {
     width: 70%;
