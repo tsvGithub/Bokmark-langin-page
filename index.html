@@ -30,18 +30,30 @@
     <a href="#scroll-up" class="scroll-to-top" aria-label="scroll to top button">
       <i class="fa fa-arrow-up"></i>
     </a>
+
     <header class="header">
-      <ul class="navbar">
-        <li class="logo">
-          <a href="">
-            <img class="logo" src="images/logo-bookmark.svg">
-          </a>
-        </li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#contactUs">Contact</a></li>
-        <li><button class="sign-in">Login</button></li>
-      </ul>
+
+      <div class="logo">
+        <a class="logo" href=""><img class="logo" src="images/logo-bookmark.svg">
+        </a>
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span></button>
+      </div>
+      <nav class="nav">
+        <ul class="navbar">
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#" class="nav-link">Pricing</a></li>
+          <li><a href="#contactUs" class="nav-link">Contact</a></li>
+          <li class="login"><button class="sign-in" class="nav-link">Login</button></li>
+          <li class="socials">
+            <a class="nav-link" href="https://www.facebook.com" target="_blank">
+              <i class="fab fa-facebook"></i></a>
+            <a class="nav-link" href="https://www.twitter.com" target="_blank">
+              <i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+      </nav>
+
     </header>
 
     <main class="main">
@@ -66,7 +78,7 @@
         </article>
         <!-- Tab links -->
         <div class="tab">
-          <button class="tablinks" onclick="openSlide(event, 'Bookmark')"> Simple Bookmarking</button>
+          <button class="tablinks active" onclick="openSlide(event, 'Bookmark')"> Simple Bookmarking</button>
           <button class="tablinks" onclick="openSlide(event, 'Search')"> Speedy Searching</button>
           <button class="tablinks" onclick="openSlide(event, 'Share')"> Easy Sharing</button>
         </div>
@@ -196,7 +208,11 @@
 
     <footer class="footer">
       <ul class="navbar">
-        <li class="logo"><a href=""><img class="logo" src="images/logo-bookmark.svg"></a></li>
+        <li class="logo">
+          <a href="">
+            <img class="logo" src="images/logo-bookmark.svg">
+          </a>
+        </li>
         <li><a href="#features">Features</a></li>
         <li><a href="#">Pricing</a></li>
         <li><a href="#contactUs">Contact</a></li>
