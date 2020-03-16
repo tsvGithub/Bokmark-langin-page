@@ -65,7 +65,7 @@ button {
   box-shadow: hsl(240, 6%, 87%) 3px 3px 3px 3.5px;
 }
 img {
-  width: 100%;
+  /* width: 100%; */
   max-width: 100%;
   display: block;
 }
@@ -1117,12 +1117,46 @@ MOBILE STYLES  375PX*/
     display: none;
   }
 
-  section.sign-up {
+  main.main section.download {
+    grid-area: download;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    /* margin: 0 auto;
+    margin-top: calc(20vw - 7vw); */
+    margin: calc(20vw - 7vw) auto 0;
+    padding: 0;
+  }
+  main.main section.download .content {
+    width: 100%;
+    max-width: 100vw;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  main.main section.download .content p {
+    padding: 0px 50px;
+  }
+  main.main section.download ul {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    text-align: center;
+    width: 75%;
+  }
+  main.main section.download ul li {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  /* section.sign-up {
     grid-area: sign-up;
     display: -ms-grid;
-    display: grid;
-    /* grid-auto-flow: row; */
-    -ms-grid-columns: 1fr;
+    display: grid; */
+  /* grid-auto-flow: row; */
+  /* -ms-grid-columns: 1fr;
 
     grid-template-columns: 1fr;
 
@@ -1130,56 +1164,7 @@ MOBILE STYLES  375PX*/
     grid-template-areas:
       "sign-up-promo"
       "demo-service-form";
-  }
-  .sign-up-promo {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    width: 90%;
-    float: none;
-    /* grid-area: sign-up-promo; */
-  }
-  .sing-up-title {
-    font-size: calc(11px + 2vw);
-    text-align: center;
-  }
-  .sign-up-content {
-    font-size: calc(7px + 2vw);
-    text-align: center;
-    line-height: 1.45;
-    width: 100%;
-  }
-  .sign-up .demo-service-form {
-    margin-top: calc(15px + 2vw);
-    padding-left: 0;
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    /* grid-area: demo-service-form; */
-  }
-  .sign-up input.demo-service-form-input {
-    width: calc(57px + 50vw);
-    margin: auto;
-    font-size: calc(6px + 1vw);
-    border-radius: 1vw;
-    -webkit-border-radius: 1vw;
-    -moz-border-radius: 1vw;
-    -ms-border-radius: 1vw;
-    -o-border-radius: 1vw;
-    padding-left: calc(3px + 2vw);
-    box-shadow: hsl(0, 5%, 12%) 1px 1px 5px 0.5px;
-  }
-  .sign-up button.demo-service-form-btn {
-    display: block;
-    width: calc(57px + 50vw);
-    margin: auto;
-    font-size: calc(6px + 1vw);
-    letter-spacing: 0.06em;
-    -webkit-border-radius: 1vw;
-    -moz-border-radius: 1vw;
-    -ms-border-radius: 1vw;
-    -o-border-radius: 1vw;
-    border-radius: 1vw;
-    margin-top: 7px;
-  }
+  } */
   /*END OF MAIN*/
   /*FOOTER*/
   footer {
