@@ -8,6 +8,9 @@
     ==MOBILE STYLES==
 */
 
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,8 +26,10 @@ body {
   max-width: 100vw;
   margin: auto;
   font-family: "Rubik", sans-serif;
+
   font-weight: 400;
   font-size: 18px;
+
   color: hsl(229, 8%, 60%);
   scroll-behavior: smooth;
 }
@@ -55,6 +60,7 @@ button {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+
   box-shadow: hsl(240, 6%, 87%) 3px 3px 3px 3.5px;
 }
 img {
@@ -62,6 +68,7 @@ img {
   max-width: 100%;
   display: block;
 }
+
 /*****************************************/
 /*--Scroll-to-Top-button--*/
 .fa {
@@ -117,6 +124,8 @@ header.header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
+
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -130,6 +139,7 @@ header.header .logo {
 header.header img.logo {
   text-align: left;
   padding-left: calc(100% - 90%);
+
   max-width: 100%;
   outline: none; /*IE*/
   border: none; /*IE*/
@@ -140,6 +150,7 @@ header.header img.logo {
 .header .navbar {
   width: 90%;
   list-style: none;
+
   margin: 1.5rem 1rem;
   margin-left: auto;
   margin-right: 45px;
@@ -209,6 +220,8 @@ header.header nav.nav .navbar li:last-of-type {
 /*-----------------------
 -------MAIN-------------*/
 main.main {
+
+
   width: 100%;
   max-width: 1440px;
 
@@ -225,6 +238,7 @@ main.main {
     "sign-up";
 }
 /*************** HERO *****************/
+
 main.main section.hero {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -303,6 +317,7 @@ main.main section.hero .img {
   border-bottom-left-radius: 11.25rem; /*180px;*/
 }
 
+
 /*************** FEATURES ********************/
 section.features {
   -ms-grid-row: 2;
@@ -324,6 +339,7 @@ section.features {
 .features .content p {
   margin-top: 2rem;
   font-size: 1rem;
+
   line-height: 1.6;
   text-align: center;
 }
@@ -340,10 +356,12 @@ section.features {
   border: none;
   background: none;
   color: hsl(229, 8%, 60%);
+
   margin: 0 1.25rem; /*0 20px;*/
   outline: none;
   cursor: pointer;
   padding: 0.875rem 1rem 1.25rem; /*14px 16px 20px;*/
+
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -366,7 +384,9 @@ section.features {
   bottom: 0;
   content: "";
   display: block;
+
   height: 0.0625rem;
+
   left: 35%;
   position: absolute;
   transform: translate(-45%, 0);
@@ -377,6 +397,8 @@ section.features {
   -o-transform: translate(-45%, 0);
   -webkit-transform: translate(-45%, 0);
 }
+
+
 .features .tabcontent {
   display: none;
   border-top: none;
@@ -394,20 +416,23 @@ section.features {
   top: 0;
   bottom: 0;
   overflow: hidden;
+
   padding: 1.875rem 1.25rem 6.25rem 6.25rem; /*30px 20px 100px 100px;*/
   flex: 0 1 50%;
 }
 .features .tabcontent img {
   max-width: 100%;
   margin: 0 3.75rem; /*0 60px;*/
-  /***********22.03*/
+
   width: 95%;
   max-width: 100%;
+
 }
 .features .tabcontent .img::before {
   content: "";
   background-color: hsl(231, 69%, 60%);
   width: 60%;
+
   height: 21.875rem; /*350px;*/
   z-index: -1;
   position: absolute;
@@ -417,9 +442,12 @@ section.features {
 }
 
 .features .slide.tabcontent .content {
+
   margin: 6.25rem auto; /*100px auto;*/
   padding: 0 1.25rem 0 7.8125rem; /*0px 20px 0px 125px;*/
+
   flex: 0 1 50%;
+
 }
 
 /************************************/
@@ -428,6 +456,7 @@ main.main section.download {
   -ms-grid-column: 1;
   grid-area: download;
   margin: 9.375rem 0 6.25rem; /*150px auto 100px;  */
+
 }
 main.main section.download .content {
   width: 50%;
@@ -497,7 +526,9 @@ main.main section.download .card button:hover {
 main.main section.download .chrome {
   align-self: flex-start;
 }
+
 main.main section.download .firefox {
+
   align-self: center;
 }
 main.main section.download .opera {
@@ -515,6 +546,7 @@ section.faq {
   align-items: center;
   justify-content: center;
   width: 45%;
+
   margin: 3.125rem auto 9.375rem; /* 50px auto 150px;*/
 }
 section.faq h2 {
@@ -531,12 +563,16 @@ section.faq p {
 .faq .accordion {
   color: #000;
   cursor: pointer;
+
   padding: 1.125rem; /*18px;*/
+
   width: 100%;
   text-align: left;
   border: none;
   border-top: 1px solid gray;
+
   font-size: 1.25rem; /* 20px;*/
+
   outline: none;
   transition: 0.4s;
   -webkit-transition: 0.4s;
@@ -548,6 +584,7 @@ section.faq p {
   color: hsl(0, 94%, 66%);
 }
 .faq .accordion:nth-of-type(1) {
+
   margin-top: 3.125rem; /*50px;*/
 }
 .faq .accordion:nth-of-type(7) {
@@ -556,18 +593,22 @@ section.faq p {
 .faq .accordion::after {
   content: url("images/icon-arrow.svg");
   float: right;
+
   margin-left: 0.3125rem; /*5px;*/
 }
 .faq .active::after {
   content: url("images/icon-arrow-red.svg");
   transform: rotate(180deg);
   transition-duration: 1s;
+
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+
 }
 .faq .panel {
+
   padding: 0 1.125rem; /*0 18px;*/
   background-color: #fff;
   overflow: hidden;
@@ -604,6 +645,7 @@ main.main section.sign-up h5 {
 }
 main.main section.sign-up h2 {
   color: white;
+
   font-size: 1.875rem; /*30px;*/
   width: 25rem; /*400px;*/
   text-align: center;
@@ -660,12 +702,16 @@ main.main form.signUpForm .error-msg {
   display: none;
   color: white;
   background-color: hsl(354, 100%, 66%);
+
   font-size: 0.875rem;
   margin: 0;
   padding: 0.9375rem 1.875rem;
+
   border-radius: 4px;
 }
+
 main.main form.signUpForm .sign-in.btn-submit {
+
   width: 7.8125rem; /*125px;*/
   max-height: 3.125rem; /*50px;*/
   margin: 0.4375rem 0.3125rem 0.875rem; /*7px 5px 14px;*/
@@ -690,6 +736,7 @@ footer.footer {
   color: hsl(240, 75%, 98%);
 }
 
+
 footer.footer .logoF {
   margin-left: 2rem;
 }
@@ -700,6 +747,7 @@ footer.footer img.logoF {
   outline: none; /*IE*/
   border: none; /*IE*/
   padding-bottom: 25px;
+
 }
 footer.footer .navF {
   flex: 1;
@@ -725,8 +773,11 @@ footer.footer .navbarF li {
   line-height: 1.8rem;
   color: white;
 }
+
 footer.footer .navbarF li.socialsF {
+
   margin: 0 auto;
+
 }
 footer.footer .navbarF li.socialsF a {
   font-size: calc(18px + 1vw);
@@ -745,6 +796,7 @@ footer.footer img.logoF:hover {
   -ms-transition: 2s;
   -o-transition: 2s;
 }
+
 footer p.attribution {
   text-align: center;
   flex: 1 0 100%;
@@ -1077,7 +1129,9 @@ MOBILE STYLES  375PX*/
   main.main .features .tabcontent .img img {
     max-width: 100%;
     margin: 0 auto;
+
   }
+
 
   main.main .features .tabcontent .img::before {
     width: 70%;
@@ -1226,3 +1280,5 @@ MOBILE STYLES  375PX*/
   }
   /*END OF FOOTER*/
 }
+
+
