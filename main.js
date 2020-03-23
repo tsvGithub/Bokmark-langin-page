@@ -13,7 +13,7 @@ navLinks.forEach(link => {
 });
 
 //===== EMAIL FORM =====
-var form = document.querySelector(".signUpForm"); //get form from HTML
+var form = document.querySelector(".signUpForm");
 var email = document.querySelector('input[type="em"]'); //get only email; [type="em"] not [type="email"] as it uses browser's prompts (to prevent default behavior)
 var checkEmail = email => {
   //check with RegEx
